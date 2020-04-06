@@ -13,12 +13,16 @@ namespace proyecto.Models
 
         public string nombre { get; set; }
 
+        public int telefono { get; set; }
+
+
         public string email { get; set; }
 
+        public string categoria { get; set; }
 
 
 
     }
-
+   
 
 }

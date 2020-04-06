@@ -9,10 +9,12 @@ namespace proyecto.Models
 {
     public class productoContext:DbContext
     {
+  
 
-    
         public DbSet<producto> productos { get; set; }
-       
+        public DbSet<cliente> clientes { get; set; }
+
+        public DbSet<proveedores> proveedore { get; set; }
 
     }
 

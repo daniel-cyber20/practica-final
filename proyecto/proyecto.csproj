@@ -134,9 +134,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\cliente.cs" />
-    <Compile Include="Models\clienteContext.cs" />
     <Compile Include="Models\producto.cs" />
     <Compile Include="Models\productoContext.cs" />
+    <Compile Include="Models\proveedores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
