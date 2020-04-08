@@ -127,8 +127,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\clientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PrincipalController.cs" />
+    <Compile Include="Controllers\productoesController.cs" />
+    <Compile Include="Controllers\proveedoresController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -179,6 +182,21 @@
     <Content Include="Views\Principal\Mantenimiento.cshtml" />
     <Content Include="Views\Principal\Procesos.cshtml" />
     <Content Include="Views\Principal\Consultas.cshtml" />
+    <Content Include="Views\productoes\Create.cshtml" />
+    <Content Include="Views\productoes\Delete.cshtml" />
+    <Content Include="Views\productoes\Details.cshtml" />
+    <Content Include="Views\productoes\Edit.cshtml" />
+    <Content Include="Views\productoes\Index.cshtml" />
+    <Content Include="Views\clientes\Create.cshtml" />
+    <Content Include="Views\clientes\Delete.cshtml" />
+    <Content Include="Views\clientes\Details.cshtml" />
+    <Content Include="Views\clientes\Edit.cshtml" />
+    <Content Include="Views\clientes\Index.cshtml" />
+    <Content Include="Views\proveedores\Create.cshtml" />
+    <Content Include="Views\proveedores\Delete.cshtml" />
+    <Content Include="Views\proveedores\Details.cshtml" />
+    <Content Include="Views\proveedores\Edit.cshtml" />
+    <Content Include="Views\proveedores\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
