@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using proyecto.Models;
+using Rotativa;
 
 namespace proyecto.Controllers
 {
@@ -19,6 +20,13 @@ namespace proyecto.Controllers
         {
             return View(db.clientes.ToList());
         }
+
+        public ActionResult imprimir()
+        {
+            var print = new ActionAsPdf("Index");
+            return print;
+        }
+
 
         // GET: clientes/Details/5
         public ActionResult Details(int? id)

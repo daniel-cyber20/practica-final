@@ -7,7 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using proyecto.Models;
-
+using Rotativa;
 namespace proyecto.Controllers
 {
     public class proveedoresController : Controller
@@ -18,6 +18,11 @@ namespace proyecto.Controllers
         public ActionResult Index()
         {
             return View(db.proveedore.ToList());
+        }
+        public ActionResult imprimir()
+        {
+            var print = new ActionAsPdf("Index");
+            return print;
         }
 
         // GET: proveedores/Details/5

@@ -4,19 +4,24 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Inicio de la vista Proveedores</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <h4>   @Html.ActionLink("Create New", "Create")</h4>
+
+    <h4> @Html.ActionLink("Impresion ", "Imprimir")</h4>
+
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.cedula)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.nombre)
         </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.cedula)
+        </th>
+
         <th>
             @Html.DisplayNameFor(model => model.telefono)
         </th>
@@ -28,12 +33,15 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.cedula)
-        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.nombre)
         </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.cedula)
+        </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.telefono)
         </td>
@@ -41,9 +49,9 @@
             @Html.DisplayFor(modelItem => item.email)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
         </td>
     </tr>
 }
